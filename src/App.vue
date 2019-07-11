@@ -3,6 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <div>
+        <a href="ui.html">跳转新的页面</a>
+      </div>
     </div>
     <router-view/>
   </div>

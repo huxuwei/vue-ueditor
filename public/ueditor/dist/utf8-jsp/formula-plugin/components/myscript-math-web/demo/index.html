@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>myscript-math-web demo</title>
+
+    <!-- <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../myscript-math-web.html"> -->
+    <script src="/ueditor/dist/utf8-jsp/formula-plugin/components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="/ueditor/dist/utf8-jsp/formula-plugin/components/myscript-math-web/myscript-math-web.html">
+</head>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+    }
+    myscript-math-web {
+        height: 90%;
+    }
+</style>
+<body touch-action="none" unresolved>
+<div id="myApp"></div>
+<template id="app" is="dom-bind">
+    <myscript-math-web
+        host="webdemoapi.myscript.com"
+        applicationkey="9428e667-c2bf-4b2f-8615-7fafb3faddbf"
+        hmackey="99b5377a-8f11-4f6c-b11d-4583262f6c99">
+    </myscript-math-web>
+</template>
+</body>
+</html>

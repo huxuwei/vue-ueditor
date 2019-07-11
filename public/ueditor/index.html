@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>海风服务中心</title>
+    <script type="text/javascript" src="./dist/utf8-jsp/third-party/jquery-1.10.2.min.js?@!VERSION"></script>
+    <script type="text/javascript" src="./dist/utf8-jsp/ueditor.all.js?@!VERSION"></script>
+    <script type="text/javascript" src="./ue.js?@!VERSION"></script>
+    <script type="text/javascript" src="./dist/utf8-jsp/lang/zh-cn/zh-cn.js?@!VERSION"></script>
+    <script type="text/javascript" src="./dist/utf8-jsp/formula-plugin/addFormulaDialog.js?@!VERSION"></script>
+    <script type="text/javascript" src="./dist/utf8-jsp/formula-plugin/components/KaTeX/dist/katex.min.js?@!VERSION"></script>
+    <link type="text/css" href="./dist/utf8-jsp/formula-plugin/components/KaTeX/dist/katex.min.css?@!VERSION"></link>
+  
+</head>
+<body>
+    <div id="menu"></div>
+    <div id="phonecall"></div>
+    <div class="container-fluid page-container">
+    <div style="height: 320px;overflow: auto;">
+           <div style="width:975px;"><textarea id="questionName" name="articleContent"></textarea></div>
+        </div>
+    </div>
+    <script type="text/javascript" >
+    	 var ueQestionName =new UE.ui.Editor({initialFrameHeight:218});
+    	 ueQestionName.render($('#questionName')[0]);
+    </script>
+</body>
+</html>
